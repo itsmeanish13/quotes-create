@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+/* Style for devices with screen width less than 600px */
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+     .row{
+        margin: 100px;
+        display: inline-block;
+
+    }
+    .quote-box{
+    width: 300px;
+    margin: 0 auto;
+    max-width: 500px;
+
+    }
+
+   
+}
+
+/* Style for devices with screen width between 600px and 1200px */
+@media only screen and (min-width: 600px) and (max-width: 1200px) {
+    body {
+        background-color: lightgreen;
+    }
+     .row{
+        
+    margin: 20px;
+    display: inline-flex;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 5px;
+}
+   
+}
+
+/* Style for devices with screen width greater than 1200px */
+@media only screen and (min-width: 1200px) {
+    body {
+        background-color: lightpink;
+    }
+     .row{
+        margin: 30px;
+        display: inline-flex;
+    }
+    
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   font-family: 'Roboto', sans-serif;
+}
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    font-size: 2;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+ 
+    
+}
+source{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+div{
+    margin: 20px;
+    
+}
+.outer-headings{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.inner-headings{
+   border: 0px solid #ddd;
+   height: 50px;
+   line-height: 50px;
+   font-size:45px;
+   text-transform: uppercase;
+   overflow: hidden;
+}
+.inner-headings span{
+    display: block;
+    transition: 0.5s;
+    position: relative;
+    color: crimson;
+    animation: animation 10s ease infinite;
+}
+@keyframes animation {
+    0%{
+        top: 0px;
+    }
+    25%{
+        top: -50px;
+    }
+    45%{
+        top: -50px;
+    }
+    50%{
+        top: -100px;
+    }
+    70%{
+        top: -100px;
+    }
+    75%{
+        top: -150px;
+    }
+    95%{
+        top: -150px;
+    }
+}
+button{
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    outline: none;
+    background: crimson;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 5px;
+}
+button:hover{
+    background: #fff;
+    color: crimson;
+}
+
+/* QUOTES */
+@media(max-width: 700){
+    .row{
+        flex-direction:column;
+    }
+}
+section{
+    padding: 50px 0;
+    display: inline;
+
+}
+.quotes{
+    width:80%;
+    margin:auto;
+    text-align: center;
+    padding-top: 50px;
+    
+
+
+}
+.quotes-col{
+    flex-basis:32%;
+    border-radius: 10px;
+    margin: 20px;
+    position:relative;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    max-width: 175px;
+    max-height: 275px;
+    display: flex;
+}
+.quotes-col img{
+    width: 100%;
+    display: block;
+}
+a .layer{
+    background:transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+    margin:0px;
+
+}
+.layer:hover{
+    background: rgba(226, 0, 0, 0.7);
+
+
+}
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 20px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    transition: 0.5s;
+    
+
+}
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+ .mood{
+    display: inline-block;
+}
+
+ /*----------------FOOTER-------------*/
+
+ 
+ .bi-heart-fill{
+    color: #f44336;
+
+}
+ /*----------------FOOTER-------------*/
+
+ .footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight:600px;
+}
+.footer p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 500;
+}
+ .bi-heart-fill{
+    color: #f44336;
+
+}
+
+
+/*--------------Quotes Generator-----------------*/
+.quote-box{
+    width: 700px;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 0ch;
+    background: #fff;
+    
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+
+}
+.quote-box h1{
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+.quote-box p{
+    font-size: 1.5em;
+    color: #666;
+    margin-bottom: 20px;
+}
+.quote-box h2{
+    font-size: 32px;
+    margin: 40px;
+    position: relative;
+}
+.quote-box h2::after{
+    content: '';
+    display: block;
+    width: 75px;
+    height: 3px;
+    background: #f44336;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -10px;
+
+}
+.quote-box blockquote{
+    font-size: 26px;
+    min-height: 110px;
+}
+.quote-box blockquote::before, .quote-box blockquote::after{
+    content: '';
+   
+}
+.quote-box span{
+    display:block;
+    margin-top: 10px;
+    float: right;
+    position: relative;
+}
+.quote-box span::before{
+    content: '';
+    font-size: 2em;
+    
+    position: absolute;
+    left: -30px;
+    top: 50%;
+    width: 20px;
+    height: 2px;
+    background-color: rgb(23,124,229);
+}
+.quote-box span::after{
+    content: '';
+    font-size: 2em;
+    
+    position: absolute;
+    right: -30px;
+    top: 50%;
+    width: 20px;
+    height: 2px;
+    background-color: rgb(23,124,229);
+}
+#new-quote {
+    background: rgb(23,124,229);
+    color: #fff;
+    
+    border: 1px solid rgb(23,124,229);
+    outline: none;
+    font-size: 18px;
+    font-weight: 700;
+   
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 25px;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    width:150px;
+    height: 50px;
+    font-size: 10px;
+
+}
+#tweet-quote {
+    background: transparent;
+    color: #fff;
+    
+    border: 1px solid rgb(23,124,229);
+    outline: none;
+    font-size: 18px;
+    font-weight: 700;
+    
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 25px;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    width:150px;
+    height: 50px;
+    font-size: 15px;
+    color: #000;
+    
+    
+
+}
