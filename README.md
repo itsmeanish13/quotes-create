@@ -1,3 +1,3 @@
 # quotes
  This is website to quotes
-visit: https://batteryloww.github.io/quotes-create/
+visit: https://itsmeanish13.github.io/quotes-create/
